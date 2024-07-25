@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashasvi Sharma Portfolio</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            min-height: 70px;
+            border-bottom: #77a 3px solid;
+            text-align: center;
+            animation: headerAnim 2s ease-in-out; /* Add animation to header */
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        #branding {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #branding img {
+            width: 100px; /* Adjust the width as needed */
+            height: 100px; /* Adjust the height as needed */
+            border-radius: 50%;
+            margin-right: 20px;
+            animation: imgAnim 2s ease-in-out; /* Add animation to image */
+        }
+        #showcase {
+            min-height: 100px;
+            background: url() no-repeat center center;
+            background-size: cover;
+            text-align: center;
+            color: #333;
+            animation: showcaseAnim 2s ease-in-out; /* Add animation to showcase */
+        }
+        #showcase h1 {
+            margin-top: 100px;
+            font-size: 55px;
+            margin-bottom: 10px;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        section#main {
+            padding: 20px;
+        }
+        .dark {
+            padding: 15px;
+            background: #333;
+            color: #fff;
+            margin-top: 10px;
+        }
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        /* Add animation keyframes */
+        @keyframes headerAnim {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes imgAnim {
+            0% {
+                transform: scale(0.5);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes showcaseAnim {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Add animation to skills section */
+        #skills ul li {
+            animation: skillsAnim 1s ease-in-out;
+            animation-delay: 0.5s;
+        }
+
+        @keyframes skillsAnim {
+            0% {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="1664694885786.jpeg" alt="Profile Picture">
+                <h1 style="color:white;">Yashasvi Sharma</h1>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="showcase">
+        <div class="container">
+            <h1>Welcome to My Portfolio</h1>
+            <p>Dedicated to continuous learning and adapting to emerging technologies.</p>
+        </div>
+    </section>
+    <section id="main">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>I am seeking an entry-level role where I can apply my theoretical knowledge and practical skills in software development and networking. I am dedicated to continuous learning and adapting to emerging technologies to drive innovation and contribute effectively to the organization's success.</p>
+
+            <h3 id="skills">Skills</h3>
+            <ul>
+                <li><strong>Operating Systems :</strong> Windows, Linux (Ubuntu, CentOS, MacOS)</li>
+                <li><strong>Languages :</strong> C, Python, JAVA, HTML, CSS, JavaScript</li>
+                <li><strong>CS Fundamentals :</strong> Data Structure, Algorithm, Database, REST APIs</li>
+                <li><strong>Networking :</strong> TCP/IP, DNS, DHCP, Network Model, Troubleshooting</li>
+                <li><strong>Tools :</strong> Postman, Swagger, PuTTy, Wireshark, Cadence Virtuoso, MATLAB</li>
+                <li><strong>Testing Proficiency :</strong> Manual Testing, Automation Testing, Networking Features</li>
+                <li><strong>Soft Skills :</strong> Positive Thinking, Problem-Solving, Time Management</li>
+                <li><strong>Additional Knowledge :</strong> Networking, API Testing, Cloud Computing, Cyber Security, VLSI</li>
+            </ul>
+
+            <h3 id="education">Education</h3>
+            <ul>
+                <li><strong>Bachelor of Technology - Electronics and Communication Engineering, GL BAJAJ Institute of Technology and Management (AKTU, Lucknow), 2021 - 2025</li>
+                <li>Intermediate - Physics, Chemistry, Maths, Delhi Global School, Mawana (CBSE, Delhi), 2020 - 2021</strong></li>
+            </ul>
+
+            <h3 id="experience">Experience</h3>
+            
+            <ul>
+		<l1><strong>Technology Virtual Internship – Deloitte (February 2023)</strong></li>
+                <ul><strong>Skills :</strong> Python, API Testing, Python Automation, Selenium, Computer Network & Web Security</ul>
+		</ul>
+
+            <h3 id="projects">Personal Projects</h3>
+            <ul>
+                <li><strong>API Testing for Open Source Websites:</strong> Experienced in manual API testing using Postman/Swagger, organizing requests, and writing test scripts. Also wrote automation scripts using Python open source libraries like requests for HTTP requests and paramiko for SSH connections, integrating with frameworks like pytest.</li>
+                <li><strong>Magical Arena (Swiggy):</strong> This project introduced me to automation testing, generating test plans, writing test scenarios, and managing extensive documentation. Additionally, I gained significant exposure to Git, handling numerous pull requests and honing my project management skills.</li>
+                <li><strong>Line Follower Robot:</strong> Developed a line follower robot with skills in Robotics, Embedded Systems, Arduino, Circuit Designing, Sensors, etc.</li>
+            </ul>
+
+            <h3 id="contact">Contact</h3>
+            <p><strong>Email :</strong> <a href="mailto:yashasvidelhi@gmail.com">yashasvidelhi@gmail.com</a></p>
+            <p><strong>LinkedIn :</strong> <a href="https://www.linkedin.com/in/yashasvisharma28/" target="_blank">Yashasvi Sharma LinkedIn</a></p>
+            <p><strong>Phone :</strong> +91-9027642575</p>
+            <p><strong>Location :</strong> Gamma I, Greater Noida, Uttar Pradesh, India (201308)</p>
+        </div>
+    </section>
+    <footer>
+        <p>Yashasvi Sharma &copy; 2024</p>
+    </footer>
+</body>
+</html>
